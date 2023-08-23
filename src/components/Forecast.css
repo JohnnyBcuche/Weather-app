@@ -1,0 +1,43 @@
+.items-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.daily-item {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 15px;
+}
+
+.daily-item .day {
+  color: #1d1919;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.city {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.temp {
+  color: #f5f4f4;
+  font-size: 28px;
+}
+
+.temp-top {
+  color: #f5f4f4;
+  font-size: 54px;
+}
+
+@media only screen and (max-width: 759px) {
+  .items-container {
+    flex-direction: column;
+  }
+}

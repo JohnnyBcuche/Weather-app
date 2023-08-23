@@ -1,0 +1,75 @@
+.form {
+  display: grid;
+  grid-template-columns: 80px 80px auto;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.select-container select {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+  display: grid;
+  text-align: center;
+  position: relative;
+  padding: 15px;
+}
+
+.search-input {
+  width: auto;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  /* border: none; */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.search-container:hover,
+.search-input:hover {
+  color: #7f7f7f;
+}
+::placeholder {
+  color: #7f7f7f;
+}
+
+.select-container select,
+.search-container:focus,
+.search-input:focus {
+  color: #323323;
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  top: 26px;
+  font-size: 22px;
+  right: 24px;
+}
+
+@media only screen and (max-width: 759px) {
+  .form {
+    grid-template-columns: 50px 50px auto;
+  }
+  .select-container select {
+    padding: 6px 0;
+    font-size: 16px;
+  }
+  .search-input {
+    max-width: 100%;
+    padding: 6px 12px;
+    font-size: 16px;
+  }
+  .search-icon {
+    top: 23px;
+    font-size: 16px;
+    right: 20px;
+  }
+}
